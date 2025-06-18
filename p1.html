@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rakshana's Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(92, 175, 200, 0.85);
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      margin: 5px 3px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 20px;
+    }
+
+    nav button:hover {
+      background-color: #2980b9;
+    }
+
+    main {
+      min-height: 65vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .section {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 700px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    ul {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    footer {
+      background-color: rgba(44, 62, 80, 0.85);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #f9f9f9;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      nav button {
+        font-size: 12px;
+        padding: 8px 10px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rakshana's Portfolio</h1>
+    <p>Hi, I am Rakshana</p>
+    <p>Mechatronics engineer</p>
+    <nav>
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('education')">Education</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('certifications')">Certifications</button>
+      <button onclick="showSection('projects')">Projects</button>
+      <button onclick="showSection('activities')">Activities</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me -->
+    <div id="about" class="section active">
+      <h2>About Me</h2>
+       Hi there! I'm a self-motivated designer with a keen eye for design and detail. I’m always exploring new technologies and pushing myself to grow, one project at a time.I also design and stimulate CAD models for industrial machines and its applications</p>
+                </p>
+            </div>
+
+    <!-- Education -->
+    <div id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+            <h4>Bachelor of Mechatronics Engineering</h4>
+                <p>Kongu Engineering College, 2023 - 2027</p>
+                <p>GPA: 8.3/10</p>
+            <h4>High School</h4>
+                <p>Bharathi Vidya Bhavan Matriculation Higher Secondary School, 2020 - 2022</p>
+                <p>Percentage: 83%</p>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+       <li>HTML5 & CSS3</li>
+            <li>Basic C Programming,Python</li>
+            <li>AutoCAD,Solidworks</li>
+            <li>MATlab and Labview</li>
+            <li>Fusion 360</li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div id="certifications" class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certified by Autodesk as AutoCAD certified user </li>
+            <li>Solidworks</li>
+            <li>MATlab</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="section">
+      <h2>Projects</h2>
+      <ul>
+        <h3>Personal Portfolio Website</h3>
+                <p>
+                    Designed and developed my own portfolio using HTML, CSS, and a bit of JavaScript. The site is fully responsive and showcases my work and skills.
+                </p>
+        <h3>Radar-based IOT monitoring systems</h3>
+                <p>
+                    A simple radar based iot monitoring systems built with IOT. Users can log in, add, delete, and track their daily tasks.
+                </p>
+        <h3>Robotic Exoskeleton</h3>
+                <p>+
+                    Wearable tech to assist mobility-impaired individuals made with sensors and pneumatics.</p>
+      </ul>
+    </div>
+
+    <!-- Activities -->
+    <div id="activities" class="section">
+      <h2>Extracurricular Activities</h2>
+      <ul>
+        <li>Presented a seminar on Industries 4.0</li>
+            <li>Winner, paper presentation on the topic wearable exoskeleton in CIT,Coimbatore</li>
+            <li>Presentated paper on the topic Aritificial Skin in NGP college</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>📧 rakshanathangamuthu@gmail.com</p>
+      <p>🌐 <a href="https://github.com/Rakshana0228" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/rakshana-thangamuthu-5baa66301/" target="_blank">LinkedIn</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Rakshana © 2025 | All rights reserved</p>
+    <p>Contact: <a href="https://mail.google.com/mail/u/0/#inbox">rakshanathangamuthu@gmail.com</a></p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+  </script>
+
+</body>
+</html>

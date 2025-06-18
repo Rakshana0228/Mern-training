@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portfolio - Your Name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f8fb;
+            color: #222;
+        }
+        header {
+            background: #283e4a;
+            color: #fff;
+            padding: 2.5rem 1rem 1.5rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.7rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 0.7rem 0 1.5rem 0;
+            font-size: 1.2rem;
+        }
+        nav a {
+            color: #ffd76e;
+            margin: 0 1.2rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.07rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 1.2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(44, 62, 80, 0.06);
+        }
+        h2 {
+            color: #283e4a;
+            border-bottom: 2px solid #f7ce3e;
+            padding-bottom: 0.2em;
+            margin-bottom: 1.3em;
+        }
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+        .about-content img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid #ffd76e;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .education, .experience {
+            margin-bottom: 2rem;
+        }
+        .edu-item, .exp-item {
+            margin-bottom: 1rem;
+        }
+        .edu-item h4, .exp-item h4 {
+            margin: 0 0 0.3rem 0;
+            font-size: 1.1rem;
+            color: #2b5876;
+        }
+        .edu-item p, .exp-item p {
+            margin: 0;
+            font-size: 0.98rem;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 1.2rem;
+        }
+        .project-card {
+            background: #f7fafb;
+            border: 1px solid #e2e6ea;
+            border-radius: 7px;
+            padding: 1rem;
+            transition: box-shadow 0.2s;
+        }
+        .project-card:hover {
+            box-shadow: 0 2px 8px rgba(40, 62, 74, 0.12);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #283e4a;
+        }
+        .project-card p {
+            margin-bottom: 0.7rem;
+        }
+        .project-card a {
+            color: #2b5876;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .skills-list li {
+            background: #f7ce3e;
+            color: #283e4a;
+            padding: 0.4em 1em;
+            border-radius: 15px;
+            font-size: 1rem;
+            list-style: none;
+        }
+        .certifications-list, .activities-list {
+            margin: 0.5rem 0 0 1.2rem;
+        }
+        .certifications-list li, .activities-list li {
+            margin-bottom: 0.5rem;
+        }
+        .contact-links a {
+            margin-right: 1.5rem;
+            color: #2b5876;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #283e4a;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+        @media (max-width: 700px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-content img {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rakshana</h1>
+        <p>Student | CAD & CAM Designer |Web Developer & Designer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a hrer="#activites">Activities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                   Hi there! I'm a self-motivated designer with a keen eye for design and detail. I’m always exploring new technologies and pushing myself to grow, one project at a time.I also design and stimulate CAD models for industrial machines and its applications</p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <div class="edu-item">
+                <h4>Bachelor of Mechatronics Engineering</h4>
+                <p>Kongu Engineering College, 2023 - 2027</p>
+                <p>GPA: 8.3/10</p>
+            </div>
+            <div class="edu-item">
+                <h4>High School</h4>
+                <p>Bharathi Vidya Bhavan Matriculation Higher Secondary School, 2020 - 2022</p>
+                <p>Percentage: 83%</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    Designed and developed my own portfolio using HTML, CSS, and a bit of JavaScript. The site is fully responsive and showcases my work and skills.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Radar-based IOT monitoring systems</h3>
+                <p>
+                    A simple radar based iot monitoring systems built with IOT. Users can log in, add, delete, and track their daily tasks.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Robotic Exoskeleton</h3>
+                <p>- Wearable tech to assist mobility-impaired individuals made with sensors and pneumatics.</p>
+                <a href="#">View Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML5 & CSS3</li>
+            <li>Basic C Programming,Python</li>
+            <li>AutoCAD,Solidworks</li>
+            <li>MATlab and Labview</li>
+            <li>Fusion 360</li>
+        </ul>
+    </div>
+
+    <div class="container" id="certifications">
+        <h2>Certifications</h2>
+        <ul class="certifications-list">
+            <li>Certified by Autodesk as AutoCAD certified user </li>
+            <li>Solidworks</li>
+            <li>MATlab</li>
+        </ul>
+    </div>
+
+    <div class="container" id="activities">
+        <h2>Co-curricular & Extra-curricular Activities</h2>
+        <ul class="activities-list">
+            <li>Presented a seminar on Industries 4.0</li>
+            <li>Winner, paper presentation on the topic wearable exoskeleton in CIT,Coimbatore</li>
+            <li>Presentated paper on the topic Aritificial Skin in NGP college</li>
+        </ul>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <div class="contact-links">
+            <a href="https://mail.google.com/mail/u/0/#inbox">rakshanathangamuthu@gmail.com</a>
+            <a href="https://www.linkedin.com/in/rakshana-thangamuthu-5baa66301/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Rakshana0228" target="_blank">GitHub Id</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Rakshana &mdash; Portfolio
+    </footer>
+</body>
+</html>
