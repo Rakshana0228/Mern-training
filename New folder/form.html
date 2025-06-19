@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #b2fefa, #0ed2f7);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-box {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #0a516d;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+    }
+
+    .row > div {
+      flex: 1;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #0a516d;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #084252;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>College Admission Form</h2>
+    <form>
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="fname" placeholder="Enter your full name" required>
+
+      <div class="row">
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Select --</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="98765 43210" required>
+
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" placeholder="Full address" required></textarea>
+
+      <label for="course">Course Applying For</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select Course --</option>
+        <option>B.E. Computer Science</option>
+        <option>B.Com</option>
+        <option>B.Sc Mathematics</option>
+        <option>B.A English Literature</option>
+        <option>BBA</option>
+        <option>Other</option>
+      </select>
+
+      <label for="marks">12th Grade Percentage</label>
+      <input type="number" id="marks" name="marks" min="0" max="100" placeholder="e.g., 85" required>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>

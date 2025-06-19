@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rhukra Cake House - Cafe | Restaurant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqcOMX9fpWt-hg50YXI4-HnUN8d9LXpSjxJ2nIygikGrKpLCg4QfVfvijx57_JI4y-ckmaNCILNXWCBT5DmODSl4XkkXyIVMkW8IbqwtMsDFmBOUXYkCKVOS-hXsTAgmCHTgpdl=s1360-w1360-h1020-rw') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    nav {
+      background-color: rgba(230, 126, 34, 0.95);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    nav a:hover {
+      background-color: #d35400;
+    }
+
+    .page {
+      display: none;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      min-height: 70vh;
+      animation: fadeIn 0.4s ease;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .active {
+      display: block;
+    }
+
+    img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+
+    .menu-item {
+      background: #fff;
+      margin: 25px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-left: 6px solid #e67e22;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    footer {
+      background-color: rgba(211, 84, 0, 0.95);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rhukra Cake House - Cafe</h1>
+    <p>Fresh. Local. Delicious.</p>
+  </header>
+
+  <nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('about')">About</a>
+    <a onclick="showPage('menu')">Menu</a>
+    <a onclick="showPage('contact')">Contact</a>
+  </nav>
+
+  <!-- Pages -->
+  <section id="home" class="page active">
+    <h2>Welcome to Rhukra Cake House - Cafe</h2>
+    <p>Welcome to the heart of authentic taste! At Rhukra Cake House - Cafe, we serve flavors that speak the language of tradition and innovation. Enjoy an unforgettable dining experience with cozy ambiance and mouthwatering dishes crafted with passion.</p>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPgLU2iU6Uf7uRm0BUqKz3YmzfaR72rTkgxnEXZ=s1360-w1360-h1020-rw" alt="Restaurant view">
+  </section>
+
+  <section id="about" class="page">
+    <h2>About Us</h2>
+    <p>Founded in 2020, Rhukra Cake House - Cafe is more than just a restaurant—it's a culinary destination. With a team of expert chefs and a commitment to sustainability, we bring you dishes made from locally-sourced ingredients, cooked to perfection.</p>
+    <p>Our mission is simple: deliver happiness on every plate. Whether it's a casual family dinner or a romantic evening, we create the perfect setting for all your moments.</p>
+  </section>
+
+  <section id="menu" class="page">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <h3>Customized cake,cupcakes,brownies – starting from ₹100</h3>
+      <p>Loaded with your own wish and our love🩷✨.</p>
+      <img src="https://lh3.googleusercontent.com/p/AF1QipNOiGR_B2reIIKJaSYPOETTyXlemzgXO_g1DAnI=s1360-w1360-h1020-rw" alt="cakes">
+    </div>
+    <div class="menu-item">
+      <h3>Kataifi Prawns – ₹350</h3>
+      <p>Golden, crispy Kataifi prawns wrapped in delicate pastry, oozing with a cheesy surprise at every bite. 🧀🦐 A dreamy, crunchy twist that melts hearts and cheese alike! 💫
+</p>
+      <img src="https://lh3.googleusercontent.com/p/AF1QipNkAe4M0Dua_I7trmWaR-imOOe1xSj0k6zDnoP-=s1360-w1360-h1020-rw" alt="Kataifi">
+    </div>
+    <div class="menu-item">
+      <h3>Spicy Chicken Phyllo – ₹120</h3>
+      <p>Fiery, tender chicken wrapped in flaky phyllo pastry, bursting with bold spices and cheesy goodness. 🔥🐔 Each bite is a crispy, spicy hug for your taste buds! 🧀✨
+</p>
+      <img src="https://lh3.googleusercontent.com/p/AF1QipOQlTBB_MsoLULRdlhpBJH4FmYnbkWJTMlHYqAy=s1360-w1360-h1020-rw" alt="Spicy Chicken Phyllo">
+    </div>
+  </section>
+
+  <section id="contact" class="page">
+    <h2>Contact Us</h2>
+    <p>📍 Address: 175/9, Vaigai St, Municipal Colony Main Rd, Veerappanchatram, Tamil Nadu 638004</p>
+    <p>📞 Phone: +91 93602 88889</p>
+    <p>📝 Instagram: @rhukracakehouse</p>
+    <p>⏰ Timings: Mon–Sun | 11:00 AM – 10:30 PM</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Rhukra Cake House - Cafe | Designed with ❤️</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => {
+        page.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
