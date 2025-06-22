@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alert Name and Time</title>
+  <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+
+  <h2>Enter Your Name:</h2>
+  
+  <input type="text" id="nameInput" placeholder="Type your name here">
+  <button onclick="showAlert()">Submit</button>
+  <input type="password" id="passwordInput" placeholder="Type your password">
+  <button on click="showAlert()">Submit</button>
+
+  <script>
+    const showAlert(){
+      var name = document.getElementById("nameInput").value;
+      var password = document.getElementById("passwordInput").value;
+       if (name === "" || password === "") {
+        alert("Please enter both your name and password.");
+        return;
+
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var seconds = now.getSeconds().toString().padStart(2, '0');
+      var currentTime = hours + ":" + minutes + ":" + seconds;
+
+      alert("Hello," + name + "!\nCurrent time is: " + currentTime);
+    }
+  </script>
+
+</body>
+</html>
