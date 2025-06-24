@@ -1,0 +1,31 @@
+use toyStore;
+switched to db toyStore
+db.toys.insertMany([
+  { "type": "car", "brand": "HotWheels", "price": 10 },
+  { "type": "car", "brand": "Matchbox", "price": 12 },
+  { "type": "doll", "brand": "Barbie", "price": 20 },
+  { "type": "car", "brand": "HotWheels", "price": 15 },
+  { "type": "doll", "brand": "Frozen", "price": 25 }
+]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('685a7ecfd0b0653d3b66015c'),
+    '1': ObjectId('685a7ecfd0b0653d3b66015d'),
+    '2': ObjectId('685a7ecfd0b0653d3b66015e'),
+    '3': ObjectId('685a7ecfd0b0653d3b66015f'),
+    '4': ObjectId('685a7ecfd0b0653d3b660160')
+  }
+}
+db.toys.aggregate([
+  {
+    $group: {
+      _id: "$type",
+      totalPrice: { $sum: "$price" }
+    }
+  }
+]);
+{
+  _id: 'car',
+  totalPrice: 37
+}
